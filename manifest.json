@@ -1,0 +1,57 @@
+{
+  "manifest_version": 3,
+  "name": "DarkVeil",
+  "version": "1.0.0",
+  "description": "Apply dark mode to any webpage with a single click.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "src/background/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "src/shared/defaults.js",
+        "src/shared/utils.js",
+        "src/shared/messaging.js",
+        "src/shared/storage.js",
+        "src/content/detection.js",
+        "src/content/mutation-observer.js",
+        "src/content/darkveil-engine.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "options_page": "src/options/options.html",
+  "commands": {
+    "toggle-darkveil": {
+      "suggested_key": {
+        "default": "Alt+Shift+D",
+        "mac": "Alt+Shift+D"
+      },
+      "description": "Toggle DarkVeil dark mode"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "darkveil@darkveil.org",
+      "strict_min_version": "109.0"
+    }
+  }
+}
