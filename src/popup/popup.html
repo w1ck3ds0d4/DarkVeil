@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=320">
+  <link rel="stylesheet" href="popup.css">
+  <title>DarkVeil</title>
+</head>
+<body>
+  <div class="popup">
+    <header class="header">
+      <div class="brand">
+        <img src="../../icons/icon48.png" alt="" class="logo" width="24" height="24">
+        <h1 class="title">DarkVeil</h1>
+      </div>
+      <label class="toggle" title="Toggle dark mode globally">
+        <input type="checkbox" id="globalToggle">
+        <span class="toggle-slider"></span>
+      </label>
+    </header>
+
+    <section class="site-section">
+      <div class="site-info">
+        <span class="site-label">This site</span>
+        <span class="site-domain" id="siteDomain">—</span>
+      </div>
+      <div class="site-controls">
+        <label class="toggle toggle-sm" title="Toggle dark mode for this site">
+          <input type="checkbox" id="siteToggle">
+          <span class="toggle-slider"></span>
+        </label>
+        <button class="btn-icon" id="whitelistBtn" title="Add to whitelist">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M8 1L10 5.5L15 6L11.5 9.5L12.5 14.5L8 12L3.5 14.5L4.5 9.5L1 6L6 5.5L8 1Z"
+                  stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="sliders-section">
+      <div class="slider-group">
+        <label for="brightness">Brightness</label>
+        <input type="range" id="brightness" min="50" max="150" value="100">
+        <span class="slider-value" id="brightnessValue">100%</span>
+      </div>
+      <div class="slider-group">
+        <label for="contrast">Contrast</label>
+        <input type="range" id="contrast" min="50" max="150" value="100">
+        <span class="slider-value" id="contrastValue">100%</span>
+      </div>
+      <div class="slider-group">
+        <label for="sepia">Sepia</label>
+        <input type="range" id="sepia" min="0" max="100" value="0">
+        <span class="slider-value" id="sepiaValue">0%</span>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <button class="btn-text" id="resetBtn">Reset</button>
+      <button class="btn-text" id="optionsBtn">Advanced Settings</button>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
