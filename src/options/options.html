@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="options.css">
+  <title>DarkVeil Settings</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <img src="../../icons/icon48.png" alt="" width="32" height="32">
+        <div>
+          <h1>DarkVeil</h1>
+          <p class="subtitle">Advanced Settings</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Global Defaults -->
+    <section class="card">
+      <h2>Global Defaults</h2>
+      <div class="setting-row">
+        <label>Dark Mode Enabled</label>
+        <label class="toggle">
+          <input type="checkbox" id="globalEnabled">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+      <div class="setting-row">
+        <label for="defBrightness">Brightness</label>
+        <div class="slider-row">
+          <input type="range" id="defBrightness" min="50" max="150" value="100">
+          <span id="defBrightnessVal">100%</span>
+        </div>
+      </div>
+      <div class="setting-row">
+        <label for="defContrast">Contrast</label>
+        <div class="slider-row">
+          <input type="range" id="defContrast" min="50" max="150" value="100">
+          <span id="defContrastVal">100%</span>
+        </div>
+      </div>
+      <div class="setting-row">
+        <label for="defSepia">Sepia</label>
+        <div class="slider-row">
+          <input type="range" id="defSepia" min="0" max="100" value="0">
+          <span id="defSepiaVal">0%</span>
+        </div>
+      </div>
+      <div class="setting-row">
+        <label for="lumThreshold">Dark Page Detection Threshold</label>
+        <div class="slider-row">
+          <input type="range" id="lumThreshold" min="5" max="50" value="20">
+          <span id="lumThresholdVal">0.20</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Whitelist -->
+    <section class="card">
+      <h2>Whitelist <span class="hint">(never darken)</span></h2>
+      <div class="list-input">
+        <input type="text" id="whitelistInput" placeholder="example.com">
+        <button id="whitelistAdd" class="btn">Add</button>
+      </div>
+      <ul class="domain-list" id="whitelistList"></ul>
+    </section>
+
+    <!-- Blacklist -->
+    <section class="card">
+      <h2>Blacklist <span class="hint">(always darken)</span></h2>
+      <div class="list-input">
+        <input type="text" id="blacklistInput" placeholder="example.com">
+        <button id="blacklistAdd" class="btn">Add</button>
+      </div>
+      <ul class="domain-list" id="blacklistList"></ul>
+    </section>
+
+    <!-- Per-Site Overrides -->
+    <section class="card">
+      <h2>Per-Site Overrides</h2>
+      <ul class="domain-list" id="siteOverridesList"></ul>
+      <p class="empty-msg" id="noOverrides">No per-site overrides configured.</p>
+    </section>
+
+    <!-- Import / Export -->
+    <section class="card">
+      <h2>Import / Export</h2>
+      <div class="btn-row">
+        <button id="exportBtn" class="btn">Export Settings</button>
+        <button id="importBtn" class="btn">Import Settings</button>
+        <input type="file" id="importFile" accept=".json" hidden>
+      </div>
+    </section>
+
+    <!-- Keyboard Shortcut -->
+    <section class="card">
+      <h2>Keyboard Shortcut</h2>
+      <p class="shortcut-display">
+        Toggle: <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>
+      </p>
+      <p class="hint">To change, visit your browser's extension shortcuts page.</p>
+    </section>
+
+    <!-- About -->
+    <section class="card">
+      <h2>About</h2>
+      <p>DarkVeil v1.0.0</p>
+      <p class="hint">Licensed under GPLv3</p>
+    </section>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
