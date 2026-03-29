@@ -1,0 +1,12 @@
+title = "DarkVeil Secret Scanning"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "DarkVeil allowlist"
+paths = [
+  '''node_modules''',
+  '''dist''',
+  '''\.zip$''',
+]
