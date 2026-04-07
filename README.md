@@ -1,19 +1,19 @@
 # DarkVeil
 
-Universal dark mode browser extension — works on any page, any browser.
+Universal dark mode browser extension - works on any page, any browser.
 
 ---
 
 ## Features
 
-- **Universal dark mode** — CSS filter inversion with smart media preservation (images, videos, canvas stay normal)
-- **Per-site settings** — toggle, brightness, contrast, and sepia controls per domain
-- **Whitelist / Blacklist** — never darken or always darken specific sites
-- **Auto-detection** — skips pages that are already dark-themed
-- **Keyboard shortcut** — `Alt+Shift+D` to toggle
-- **Cross-browser** — single codebase works on Chrome, Edge, Firefox, Brave, Vivaldi, Opera, Arc
-- **Custom browser support** — bookmarklet and userscript for browsers without extension support
-- **Print-safe** — filters are disabled automatically when printing
+- **Universal dark mode** - CSS filter inversion with smart media preservation (images, videos, canvas stay normal)
+- **Per-site settings** - toggle, brightness, contrast, and sepia controls per domain
+- **Whitelist / Blacklist** - never darken or always darken specific sites
+- **Auto-detection** - skips pages that are already dark-themed
+- **Keyboard shortcut** - `Alt+Shift+D` to toggle
+- **Cross-browser** - single codebase works on Chrome, Edge, Firefox, Brave, Vivaldi, Opera, Arc
+- **Custom browser support** - bookmarklet and userscript for browsers without extension support
+- **Print-safe** - filters are disabled automatically when printing
 
 ---
 
@@ -58,12 +58,12 @@ Install `bookmarklet/darkveil-userscript.js` via your userscript manager.
 
 Click the DarkVeil icon in the toolbar to open the popup:
 
-- **Global toggle** — enable/disable dark mode everywhere
-- **Site toggle** — enable/disable for the current site only
-- **Brightness** — adjust brightness (50–150%)
-- **Contrast** — adjust contrast (50–150%)
-- **Sepia** — apply sepia tone (0–100%)
-- **Whitelist** — add current site to whitelist (never darken)
+- **Global toggle** - enable/disable dark mode everywhere
+- **Site toggle** - enable/disable for the current site only
+- **Brightness** - adjust brightness (50–150%)
+- **Contrast** - adjust contrast (50–150%)
+- **Sepia** - apply sepia tone (0–100%)
+- **Whitelist** - add current site to whitelist (never darken)
 
 ### Options Page
 
