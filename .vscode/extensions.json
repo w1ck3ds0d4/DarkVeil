@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "anthropic.claude-code",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "christian-kohler.path-intellisense",
+    "mikestead.dotenv",
+    "wix.vscode-import-cost",
+    "eamodio.gitlens",
+    "usernamehw.errorlens",
+    "editorconfig.editorconfig",
+    "streetsidesoftware.code-spell-checker",
+    "gruntfuggly.todo-tree",
+    "johnpapa.vscode-peacock",
+    "pkief.material-icon-theme"
+  ]
+}
