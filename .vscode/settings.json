@@ -1,4 +1,0 @@
-{
-  "peacock.color": "#1A1A2E",
-  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }
-}
