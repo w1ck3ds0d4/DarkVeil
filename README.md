@@ -60,9 +60,9 @@ Click the DarkVeil icon in the toolbar to open the popup:
 
 - **Global toggle** - enable/disable dark mode everywhere
 - **Site toggle** - enable/disable for the current site only
-- **Brightness** - adjust brightness (50–150%)
-- **Contrast** - adjust contrast (50–150%)
-- **Sepia** - apply sepia tone (0–100%)
+- **Brightness** - adjust brightness (50-150%)
+- **Contrast** - adjust contrast (50-150%)
+- **Sepia** - apply sepia tone (0-100%)
 - **Whitelist** - add current site to whitelist (never darken)
 
 ### Options Page

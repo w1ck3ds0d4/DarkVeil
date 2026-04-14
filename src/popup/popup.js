@@ -31,11 +31,11 @@
       const state = await chrome.runtime.sendMessage({ type: 'darkveil-get-state' });
       if (state?.domain) {
         currentDomain = state.domain;
-        siteDomain.textContent = currentDomain || '—';
+        siteDomain.textContent = currentDomain || '-';
         siteToggle.checked = state.active;
       }
     } catch {
-      siteDomain.textContent = '—';
+      siteDomain.textContent = '-';
     }
 
     // Load settings from storage
@@ -205,7 +205,7 @@
     }
   });
 
-  // Sliders — live preview on input, persist on change
+  // Sliders - live preview on input, persist on change
   [brightness, contrast, sepia].forEach(slider => {
     slider.addEventListener('input', () => {
       updateSliderLabels();

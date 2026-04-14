@@ -1,5 +1,5 @@
 /**
- * DarkVeil core engine — injects CSS filter dark mode at document_start.
+ * DarkVeil core engine - injects CSS filter dark mode at document_start.
  */
 (function () {
   const DV = window.DarkVeil || {};
@@ -121,7 +121,7 @@
     if (cached && cached.enabled !== false) {
       enable(cached);
     } else if (!cached) {
-      // No cache — read from sync storage
+      // No cache - read from sync storage
       DV.storage?.getSettingsForDomain(domain).then((settings) => {
         if (settings.enabled) {
           enable(settings);

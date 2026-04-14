@@ -1,5 +1,5 @@
 /**
- * DarkVeil MutationObserver — handles dynamic content, shadow DOM, and iframes.
+ * DarkVeil MutationObserver - handles dynamic content, shadow DOM, and iframes.
  */
 (function () {
   const DV = window.DarkVeil || {};
@@ -76,7 +76,7 @@
   let pendingNodes = [];
 
   /**
-   * Debounced mutation handler — batches DOM changes every 100ms.
+   * Debounced mutation handler - batches DOM changes every 100ms.
    */
   function handleMutations(mutations) {
     for (const mutation of mutations) {

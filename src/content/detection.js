@@ -1,5 +1,5 @@
 /**
- * DarkVeil dark page detection — avoids double-darkening already-dark pages.
+ * DarkVeil dark page detection - avoids double-darkening already-dark pages.
  */
 (function () {
   const DV = window.DarkVeil || {};
@@ -56,7 +56,7 @@
     const dark = isPageDark();
 
     if (dark && DV.engine?.isActive()) {
-      // Page is already dark — disable to avoid double-inversion
+      // Page is already dark - disable to avoid double-inversion
       DV.engine.disable();
 
       // Cache the detection so we skip this domain next time
